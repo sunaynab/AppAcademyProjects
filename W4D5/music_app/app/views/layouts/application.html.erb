@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>MusicApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:100,300,400" rel="stylesheet">
+  </head>
+
+  <%= render 'shared/login_bar' %>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
