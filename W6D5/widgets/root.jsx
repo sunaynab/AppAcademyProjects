@@ -3,6 +3,28 @@ import Clock from './frontend/clock';
 import Weather from './frontend/weather';
 import Autocomplete from './frontend/autocomplete';
 
+const Names = [
+  "Andres",
+  "Adam",
+  "Bob",
+  "Cathy",
+  "Dom",
+  "Edward",
+  "Francine",
+  "Gretchen",
+  "Jaime",
+  "Jonas",
+  "Molly",
+  "Ingrid",
+  "Linda",
+  "Owen",
+  "Quentin",
+  "Ross",
+  "Urkel",
+  "Val",
+  "Zach"
+];
+
  class Root extends React.Component{
   constructor (props){
     super(props);
@@ -11,12 +33,11 @@ import Autocomplete from './frontend/autocomplete';
   render() {
     return (
     <div>
-      <h1>Clock</h1>
       <Clock />
-      <h1>Weather</h1>
       <Weather />
-      <h1>AutoComplete</h1>
-      <Autocomplete />
+      <div className="bottom">
+        <Autocomplete names={Names} />
+      </div>
     </div>
     );
   }

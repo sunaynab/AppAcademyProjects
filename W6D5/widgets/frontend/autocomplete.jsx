@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 class Autocomplete extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
-    this.state = {inputVal: ""};
+    this.state = { inputVal: ""};
     this.selectName = this.selectName.bind(this);
     this.handleInput = this.handleInput.bind(this);
   }
@@ -12,13 +13,13 @@ class Autocomplete extends React.Component {
    this.setState({inputVal: event.currentTarget.value});
  }
 
-  matches () {
+  matches() {
     const matches = [];
     if (this.state.inputVal.length === 0) {
       return this.props.names;
     }
 
-    this.props.names.forEach( name => {
+    this.props.names.forEach(name => {
       let sub = name.slice(0, this.state.inputVal.length);
       if (sub.toLowerCase() === this.state.inputVal.toLowerCase()) {
         matches.push(name);
@@ -44,18 +45,20 @@ class Autocomplete extends React.Component {
       );
     });
     return (
-    <div className="autocomplete">
-      <input
-        onChange={this.handleInput}
-        value={this.state.inputVal}
-        placeholder='Search'/>
-      <ul>
-        {results}
-      </ul>
-    </div>
+      <div>
+        <div className='autocomplete'>
+          <h1>AutoComplete</h1>
+          <input
+            onChange={this.handleInput}
+            value={this.state.inputVal}
+            placeholder='Search'/>
+          <ul>
+              {results}
+          </ul>
+        </div>
+      </div>
     );
   }
-
 }
 
 export default Autocomplete;

@@ -27,6 +27,7 @@ class Clock extends React.Component {
     const {time} = this.state;
     return (
       <div className="clock">
+        <h1>Clock</h1>
         <div className="date">
           <label>Time:</label>
           <span id='time'>{time.toTimeString()}</span>

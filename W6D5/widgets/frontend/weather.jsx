@@ -32,6 +32,7 @@ class Weather extends React.Component {
     const {temp, location} = this.state;
     return (
       <div className="weather">
+        <h1>Weather</h1>
         <span >{Math.floor(temp)}°F</span>
         <span className= "location">{location}</span>
       </div>
