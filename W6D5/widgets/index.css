@@ -1,0 +1,60 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+span, label {
+  color: white;
+}
+
+span, h1{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+label {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+span {
+  font-size: 18px;
+}
+
+.date {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.clock {
+  background-color: orange;
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.weather {
+  background-color: #23aaff;
+  color: black;
+  width: 500px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.weather span {
+  display: flex;
+  justify-content: center;
+}
+
+.weather .location {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+}
