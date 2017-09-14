@@ -39,7 +39,7 @@ span {
   width: 500px;
   height: auto;
   padding: 10px;
-  margin: 8px;
+  margin: 10px;
 }
 
 .weather {
@@ -65,9 +65,9 @@ span {
 .autocomplete {
   background-color: #7e57ba;
   color: white;
-  width: 225px;
+  width: 237px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 12px;
   padding: 8px;
   font-family: 'Source Sans Pro', sans-serif;
   float: right;
@@ -76,4 +76,70 @@ span {
 .autocomplete input, .autocomplete li {
   cursor: pointer;
   margin-left: 50px;
+}
+
+.TABS {
+  width: 237px;
+  height: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.TABS h1 {
+  color: #e84a4a;
+}
+
+.tab-content {
+  background-color: #e84a4a;
+}
+
+.tabs ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 45px;
+}
+
+.tabs li {
+  float: left;
+  cursor: pointer;
+  font-family: 'Fjalla One', sans-serif;
+  list-style: none;
+}
+
+.tab-header > li{
+  width: 65px;
+  border-top: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 4px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e84a4a;
+}
+
+.tab-header > li:first-child{
+  border-left: 2px solid black;
+}
+
+.tab-header > li:last-child{
+  border-right: 2px solid black;
+}
+
+.tab-header > li:hover{
+  background-color: lightpink;
+  color: #e84a4a;
+}
+
+.tab-content {
+  background-color: #e84a4a;
+  width: 195px;
+  height: 250px;
+}
+
+.active {
+  color: white;
 }
